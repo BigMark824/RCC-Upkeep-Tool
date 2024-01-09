@@ -23,3 +23,6 @@ If you don't want to build I've left a compiled version in releases!
 # Projects used in (you may add me on discord to get your name added, credit is appreciated! @mathmark824)
 
 * [GooberBlox](https://goober.biz/register)
+
+
+Edit: It's setup for x86 Release
