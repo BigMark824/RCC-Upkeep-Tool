@@ -3,6 +3,14 @@
 ![image](https://imgur.com/1fTBAK7.png)
 ![image](https://imgur.com/AVUh8iF.png)
 
+# How to build
+I personally used visual studio 2022 to develop this, all you have to do is open the .sln and compile!
+
+You can easily port this to something like CMAKE!
+
+# Usage
+Simply run the exe, it will open RCCService and track its status!
+
 # Libraries used
 
 * [spdlog](https://github.com/gabime/spdlog)
