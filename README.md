@@ -8,6 +8,7 @@ I personally used visual studio 2022 to develop this, all you have to do is open
 
 You can easily port this to something like CMAKE!
 
+Edit: It's setup for x86 Release
 # Usage
 Simply run the exe, it will open RCCService and track its status!
 
@@ -25,4 +26,3 @@ If you don't want to build I've left a compiled version in releases!
 * [GooberBlox](https://goober.biz/register)
 
 
-Edit: It's setup for x86 Release
