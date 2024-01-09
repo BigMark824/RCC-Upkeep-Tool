@@ -5,4 +5,7 @@
 
 # Libraries used
 
-* spdlog ![spdlog](https://github.com/gabime/spdlog)
+* [spdlog](https://github.com/gabime/spdlog)
+* [winsock2](https://learn.microsoft.com/en-us/windows/win32/api/winsock2/)
+
+If you don't want to build I've left a compiled version in releases!
