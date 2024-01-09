@@ -6,7 +6,7 @@
 #include <winsock2.h>
 
 #pragma comment(lib, "ws2_32.lib")
-
+// Code by @mathmark824, used with permission! 09-01-2024
 int StartRCC() {
     const char* command = "start cmd /c 271.exe -console -verbose -placeid:1818 -port 10836";
 
