@@ -5,12 +5,22 @@
 #include <thread>
 #include <winsock2.h>
 
+// detect if machine is Linux or Windows respectively and base commands upon that!
+#ifdef _WIN32
+#include <winsock2.h>
 #pragma comment(lib, "ws2_32.lib")
+#define RCC_COMMAND "start cmd /c 271.exe -console -verbose -placeid:1818 -port 10836"
+#else
+// TODO: Include libs for linux
+#include <unistd.h>
+#define RCC_COMMAND "wine 271.exe -console -verbose -placeid:1818 -port 10836 &"
+#endif
+#pragma comment(lib, "ws2_32.lib")
+
+
 // Code by @mathmark824, used with permission! 09-01-2024
 int StartRCC() {
-    const char* command = "start cmd /c 271.exe -console -verbose -placeid:1818 -port 10836";
-
-    return system(command);
+    return std::system(RCC_COMMAND);
 }
 
 bool IsPortOpen() {
@@ -31,7 +41,9 @@ bool IsPortOpen() {
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_addr.s_addr = inet_addr("127.0.0.1");
     // change this to your soap port pal
-    serverAddress.sin_port = htons(99999);
+
+    // zuzara is a pedantic freak :sob:
+    serverAddress.sin_port = htons(65535);
 
     int connectResult = connect(sock, reinterpret_cast<sockaddr*>(&serverAddress), sizeof(serverAddress));
 
@@ -54,7 +66,7 @@ int main() {
 
     if (result != 0) {
         spdlog::critical("Couldn't start RCCService");
-        system("pause");
+        std::system("pause");
         return 1;
     }
 
