@@ -1,7 +1,7 @@
 # RCC Crash Detector
  This tool is used to ensure that RCCService stays up in the event of a gameserver crash!
-![image](https://imgur.com/1fTBAK7.png)
-![image](https://imgur.com/AVUh8iF.png)
+![image](https://imgur.com/zFA4KUQ.png)
+![image](https://imgur.com/wrZdyhW.png)
 
 # How to build
 I personally used visual studio 2022 to develop this, all you have to do is open the .sln and compile!
