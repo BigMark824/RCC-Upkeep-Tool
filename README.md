@@ -9,3 +9,5 @@
 * [winsock2](https://learn.microsoft.com/en-us/windows/win32/api/winsock2/)
 
 If you don't want to build I've left a compiled version in releases!
+
+# Pull requests are always welcome!
