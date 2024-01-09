@@ -11,3 +11,7 @@
 If you don't want to build I've left a compiled version in releases!
 
 # Pull requests are always welcome!
+
+# Projects used in (you may add me on discord to get your name added, credit is appreciated! @mathmark824)
+
+* [GooberBlox](https://goober.biz/register)
