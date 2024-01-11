@@ -1,4 +1,4 @@
-# RCC Crash Detector
+# RCC Crash Detector 2 electric boogaloo cmake edition
  This tool is used to ensure that RCCService stays up in the event of a gameserver crash!
 ![image](https://imgur.com/zFA4KUQ.png)
 ![image](https://imgur.com/wrZdyhW.png)
